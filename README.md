@@ -1,6 +1,6 @@
 # (Proyecto IA) Predicción de la Enfermedad de Parkinson mediante Análisis de Voz
 
-![Análisis de Parkinson](https://user-images.githubusercontent.com/74038190/212746035-d5c61762-973c-44c0-aec7-887f3b7690e3.gif)
+![Análisis de Parkinson]([https://user-images.githubusercontent.com/74038190/212746035-d5c61762-973c-44c0-aec7-887f3b7690e3.gif](https://user-images.githubusercontent.com/74038190/212750155-3ceddfbd-19d3-40a3-87af-8d329c8323c4.gif))
 
 Este repositorio contiene el proyecto final para la asignatura de Inteligencia Artificial de la Universidad del Magdalena (Noviembre 2024). El objetivo es desarrollar y evaluar un modelo de Machine Learning capaz de predecir la presencia de la enfermedad de Parkinson basándose en grabaciones de señales de voz.
 
@@ -79,6 +79,9 @@ Este modelo fue capaz de manejar exitosamente el desbalanceo de clases, identifi
 
 AtromicLink(LinkedGTF)
 Jose Torreglosa.
+
+![Análisis de Parkinson](https://private-user-images.githubusercontent.com/74038190/243328563-d0cfe7d1-0b8c-4e4a-9a66-875290ba6065.gif?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjE5NDMyOTEsIm5iZiI6MTc2MTk0Mjk5MSwicGF0aCI6Ii83NDAzODE5MC8yNDMzMjg1NjMtZDBjZmU3ZDEtMGI4Yy00ZTRhLTlhNjYtODc1MjkwYmE2MDY1LmdpZj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTEwMzElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUxMDMxVDIwMzYzMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTRmZTI5NGMyOGVjM2MxMjNlNjVhNTUyMmVlZjYwMTA5ZmE4YzgxZTEwMzAwODk3OTk3OTA4ZDhiOWRmM2Y3NmEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.ctTkOLVGkTS-RMAiircyZPmlqRalwCkiqWqH_YhvuEs)
+
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jtorreglosam/)
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:josddaniel1@gmail.com)
 
