@@ -1,10 +1,14 @@
-# (Proyecto IA) Predicción de la Enfermedad de Parkinson mediante Análisis de Voz
+# (Proyecto IA) Predicción de Parkinson mediante Análisis de Voz
 
+![Análisis de Parkinson](https://tse1.mm.bing.net/th/id/OIP.djjJfRjmIgCcUG2jmMhsQAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3)
 
-Este repositorio contiene el proyecto final para la asignatura de Inteligencia Artificial de la Universidad del Magdalena (Noviembre 2024). El objetivo es desarrollar y evaluar un modelo de Machine Learning capaz de predecir la presencia de la enfermedad de Parkinson basándose en grabaciones de señales de voz.
+Este repositorio contiene el proyecto final para la asignatura de Inteligencia Artificial de la Universidad del Magdalena. El objetivo es desarrollar y evaluar un modelo de Machine Learning capaz de predecir la presencia de la enfermedad de Parkinson basándose en grabaciones de señales de voz.
 
 **Autores:**
 * Jose Torreglosa
+* Jennifer Roa
+* Lauren Gonzales
+
 ---
 
 ### 💡 Sobre el Proyecto
@@ -31,30 +35,35 @@ El notebook `PARKINSONll.ipynb` está estructurado de la siguiente manera:
 2.  **Análisis Exploratorio (EDA):**
     * Visualización de las distribuciones de las características.
     * Análisis de la variable objetivo (`status`) para confirmar el desbalanceo.
-    * Estudio de **multicolinealidad** mediante un *heatmap* y una función de detección, revelando alta correlación entre muchas características de voz.
-3.  **Selección de Características:**
+    * Estudio de **multicolinealidad** mediante un *heatmap*, revelando alta correlación entre muchas características.
+3.  **Preprocesamiento y Selección de Características:**
     * Debido a la alta multicolinealidad, se aplicó **Regresión Logística con regularización L1 (Lasso)**.
     * Esta técnica seleccionó las **13 características más relevantes** de las 22 originales, eliminando la redundancia.
-4.  **Modelado y Balanceo de Clases:**
+    * Los datos fueron estandarizados usando `StandardScaler`.
+4.  **Modelado y Experimentación:**
     * Se compararon múltiples estrategias para manejar el desbalanceo y maximizar el rendimiento.
     * **Método 1:** Regresión Logística + **SMOTE** (Accuracy: 76%).
     * **Método 2:** Random Forest + **Ponderación de Clases** (Accuracy: 93%).
     * **Método 3:** Optimización del Método 2 usando **GridSearchCV** (Accuracy: 93%).
-    * **Método 4:** SMOTE + Random Forest (Accuracy: 92%).
+    * **Método 4:** Random Forest (Baseline, *sin* balanceo) (Accuracy: 95%).
+    * **Método 5 (CAMPEÓN):** Random Forest + **SMOTE** (Accuracy: 97%).
 
 ---
 
-### 🏆 Resultados y Conclusión
+### 🏆 Resultados y Modelo Final
 
-El modelo final, un **Random Forest Optimizado** utilizando la técnica de `class_weight='balanced_subsample'` (Método 3), demostró ser el más robusto, alcanzando un **accuracy del 93%** en el conjunto de prueba.
+El modelo final, un **`RandomForestClassifier`** entrenado sobre datos aumentados con **SMOTE** (Synthetic Minority Over-sampling Technique), demostró ser el más robusto, alcanzando un **accuracy del 97%** en el conjunto de prueba (Celda 51).
 
-Este modelo fue capaz de manejar exitosamente el desbalanceo de clases, identificando correctamente a 12 de los 15 pacientes sanos y a 43 de los 44 pacientes con Parkinson en el set de prueba.
+Este modelo fue capaz de manejar exitosamente el desbalanceo, produciendo una matriz de confusión casi perfecta en el set de prueba, con solo 1 Falso Positivo y 1 Falso Negativo.
 
-| Modelo | Accuracy | F1-Score (Sano) | F1-Score (Parkinson) |
+#### Comparativa de Modelos Finales
+
+| Estrategia de Modelo (Random Forest) | Accuracy | Falsos Positivos | Falsos Negativos |
 | :--- | :---: | :---: | :---: |
-| Regresión Logística + SMOTE | 0.76 | 0.65 | 0.82 |
-| **Random Forest + Class Weight (Optimizado)** | **0.93** | **0.86** | **0.96** |
-| Random Forest + SMOTE | 0.92 | 0.83 | 0.94 |
+| **RF + SMOTE (Modelo Ganador)** | **97%** | **1** | **1** |
+| RF (Sin técnica de balanceo) | 95% | 1 | 2 |
+| RF + Ponderación de Clases | 93% | 3 | 1 |
+| Regresión Logística + SMOTE | 76% | 12 | 2 |
 
 ---
 
@@ -64,11 +73,10 @@ Este modelo fue capaz de manejar exitosamente el desbalanceo de clases, identifi
     ```sh
     git clone [https://github.com/TU_USUARIO/TU_REPOSITORIO.git](https://github.com/TU_USUARIO/TU_REPOSITORIO.git)
     ```
-2.  Crea un entorno virtual e instala las dependencias:
-    ```sh
-    pip install -r requirements.txt
+2.  Crea un entorno virtual e instala las dependencias (puedes crear un `requirements.txt`):
     ```
-    (Asegúrate de tener `pandas`, `numpy`, `scikit-learn`, `matplotlib`, `seaborn` y `imblearn`)
+    pip install pandas numpy scikit-learn matplotlib seaborn imbalanced-learn jupyter
+    ```
 3.  Abre el notebook `PARKINSONll.ipynb` usando Jupyter Lab o Jupyter Notebook.
 4.  Asegúrate de que el archivo `parkinsons.data` esté en una carpeta `/data/` al mismo nivel que el notebook.
 
