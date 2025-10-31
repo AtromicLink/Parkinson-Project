@@ -1,6 +1,6 @@
 # (Proyecto IA) Predicción de la Enfermedad de Parkinson mediante Análisis de Voz
 
-![Análisis de Parkinson](https://i.imgur.com/83o0P68.png)
+![Análisis de Parkinson](https://user-images.githubusercontent.com/74038190/212746035-d5c61762-973c-44c0-aec7-887f3b7690e3.gif)
 
 Este repositorio contiene el proyecto final para la asignatura de Inteligencia Artificial de la Universidad del Magdalena (Noviembre 2024). El objetivo es desarrollar y evaluar un modelo de Machine Learning capaz de predecir la presencia de la enfermedad de Parkinson basándose en grabaciones de señales de voz.
 
