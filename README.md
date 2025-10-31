@@ -75,12 +75,11 @@ Este modelo fue capaz de manejar exitosamente el desbalanceo de clases, identifi
 
 ---
 
-### 📩 Contacto
+### 📩 
 
-¡Conéctate con nosotros!
-
+AtromicLink(LinkedGTF)
+Jose Torreglosa.
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jtorreglosam/)
-
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:josddaniel1@gmail.com)
 
 ---
