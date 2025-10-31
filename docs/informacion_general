@@ -1,0 +1,85 @@
+1. MDVP
+(Hz) - Frecuencia Fundamental Promedio (Fo)
+Fo (Frecuencia fundamental): Es la frecuencia promedio de las vibraciones de las cuerdas vocales al hablar. Se mide en Hertz (Hz) y se asocia con el tono de la voz. En personas con Parkinson, esta frecuencia puede estar alterada debido a la dificultad en el control vocal.
+2. MDVP
+(Hz) - Frecuencia Fundamental Máxima
+Representa la frecuencia máxima alcanzada en una grabación de voz. Este valor puede reflejar la capacidad de control de la voz; en personas con Parkinson, la frecuencia máxima puede ser inconsistente debido a la inestabilidad vocal.
+3. MDVP
+(Hz) - Frecuencia Fundamental Mínima
+La frecuencia mínima alcanzada durante la grabación de voz. Similar a la frecuencia máxima, puede verse afectada en personas con Parkinson, indicando posibles dificultades en la modulación de la voz.
+4. Jitter - Variabilidad en la Frecuencia Fundamental
+Representa la variación de la frecuencia fundamental entre ciclos vocales. En personas con voz normal, el Jitter es generalmente bajo. En el Parkinson, el Jitter puede ser elevado, indicando una inestabilidad en el tono de la voz. En este conjunto de datos se incluyen varias métricas de Jitter:
+
+MDVP
+(%), MDVP
+(Abs): Medidas de Jitter en porcentajes y valores absolutos.
+
+MDVP
+: Jitter de Perturbación Relativa, mide la variación de frecuencia promediada en ciclos cercanos.
+
+MDVP
+: Jitter de Cociente de Perturbación de Período, otra métrica de variabilidad de frecuencia.
+
+Jitter
+: Doble de Perturbación Diferencial de Período, que ofrece otro ángulo para medir la variación en frecuencia.
+
+5. Shimmer - Variabilidad en la Amplitud
+Representa las variaciones en la amplitud de las ondas sonoras. Las personas con Parkinson suelen tener valores altos de Shimmer, lo cual indica variaciones en el volumen de la voz. Este conjunto de datos incluye varias medidas de Shimmer:
+
+MDVP
+, MDVP
+(dB): Variación de amplitud en porcentaje y en decibelios.
+
+Shimmer, Shimmer
+: Amplitud de Cociente de Perturbación, que mide la variabilidad en diferentes ciclos de voz.
+MDVP, Shimmer
+: Medidas adicionales que evalúan la variación en amplitud entre ciclos consecutivos.
+
+
+6. NHR y HNR - Relación de Ruido con Componentes Tonales en la Voz
+NHR (Relación de Ruido a Armonía): Indica la cantidad de ruido en relación a los componentes armónicos (tonales) en la voz. En personas con Parkinson, este valor suele ser alto debido a la falta de claridad en el tono de voz.
+HNR (Relación de Armonía a Ruido): Es la relación entre las frecuencias armónicas y el ruido en la voz. En personas con Parkinson, el HNR puede ser bajo, lo que indica una disminución en la calidad tonal de la voz.
+7. status - Estado de Salud
+Indica el estado de salud del individuo. Un valor de 0 representa a una persona sana y 1 representa a una persona con Parkinson.
+8. RPDE y D2 - Medidas de Complejidad Dinámica No Lineal
+RPDE (Medida de Entropía Recurrencia de Dinámica): Evalúa la estabilidad de las señales vocales en una serie temporal. Ayuda a capturar patrones de voz irregulares y complejos que pueden ser característicos de las personas con Parkinson.
+D2 (Dimensión Correlativa): Mide la complejidad en la dinámica de la voz, basada en teoría de sistemas no lineales. Valores altos de D2 indican una mayor complejidad en la señal, a menudo observada en personas con Parkinson.
+9. DFA - Exponente de Escalamiento Fractal
+DFA (Análisis de Fluctuación Detrendizado): Es una medida fractal que estima cómo se distribuye el ruido y las variaciones en la señal vocal a través del tiempo. Esta métrica ayuda a identificar patrones fractales en la señal, reflejando la estabilidad del control vocal.
+10. spread1, spread2, PPE - Medidas No Lineales de Variación en la Frecuencia Fundamental
+spread1 y spread2: Son parámetros que cuantifican la dispersión o el ancho de banda de las frecuencias fundamentales. Ayudan a determinar la regularidad y estabilidad en la frecuencia de la voz.
+PPE (Entropía de Energía Promedio): Mide la irregularidad en la energía de la voz. Valores altos en PPE pueden indicar una mayor inestabilidad vocal, característica de pacientes con Parkinson.
+Estas métricas permiten obtener una imagen detallada de cómo los síntomas de Parkinson afectan la voz.
+ 
+
+
+No todas las métricas tienen la misma relevancia para la detección y monitoreo de la enfermedad de Parkinson.
+La importancia de cada métrica depende de cómo afecta el Parkinson a la voz y de su capacidad para capturar esas alteraciones. A continuación, explico algunas consideraciones para evaluar su importancia:
+
+1. Jitter y Shimmer (Variabilidad en Frecuencia y Amplitud)
+Importancia: Alta. Las métricas de Jitter y Shimmer son importantes porque miden la estabilidad de la frecuencia y amplitud de la voz, dos aspectos que tienden a verse afectados en pacientes con Parkinson debido a la rigidez muscular y el control motor debilitado.
+Utilidad: Estas métricas son útiles en la detección de temblores y otras irregularidades en la voz, que son síntomas vocales comunes en el Parkinson.
+2. NHR y HNR (Relación Ruido-Armonía)
+Importancia: Alta. Estas métricas indican la calidad tonal de la voz, donde las personas con Parkinson a menudo tienen un mayor ruido en la voz debido a la pérdida de control motor fino en las cuerdas vocales.
+Utilidad: Las relaciones de ruido a armonía ayudan a identificar la pérdida de calidad vocal y la presencia de ruido, dos características relevantes para monitorear la progresión de la enfermedad.
+3. Frecuencias (Fo, Fhi, Flo)
+Importancia: Media. La frecuencia fundamental y sus variaciones (mínima y máxima) aportan información sobre el tono promedio y el rango vocal. Aunque el Parkinson puede afectar la capacidad de control tonal, estas métricas por sí solas pueden ser menos específicas para la detección de la enfermedad.
+Utilidad: Son útiles en combinación con otras métricas, ya que una frecuencia fundamental inestable puede indicar problemas motores en la laringe.
+4. RPDE y D2 (Medidas de Complejidad No Lineal)
+Importancia: Alta. Las métricas de complejidad no lineal, como RPDE y D2, son relevantes porque pueden detectar patrones irregulares y complejos en la voz que son característicos del Parkinson.
+Utilidad: Estas métricas ayudan a capturar la variabilidad y la inestabilidad en el habla, lo que permite un análisis más profundo de la disfunción vocal en la enfermedad.
+5. DFA (Exponente de Escalamiento Fractal)
+Importancia: Media. La DFA mide la estabilidad de la señal de voz a nivel fractal, útil para ver patrones de cambio a largo plazo en el control vocal. Sin embargo, por sí sola puede no capturar todas las características de disfunción vocal en el Parkinson.
+Utilidad: Su utilidad aumenta cuando se usa junto con RPDE y otras métricas de complejidad para entender la estabilidad en el control de la voz.
+6. spread1, spread2, PPE (Variación en Frecuencia Fundamental)
+Importancia: Alta para spread1 y spread2; Media para PPE. Estas métricas miden la dispersión de la frecuencia fundamental y pueden ser útiles para identificar irregularidades en el tono.
+Utilidad: Ayudan a capturar la irregularidad y la amplitud de variaciones en el tono de voz, lo cual es relevante, aunque la PPE puede ser menos específica para diferenciar la enfermedad en algunas personas.
+
+Conclusion.
+
+Las métricas más relevantes suelen ser:
+
+Jitter y Shimmer: Capturan la inestabilidad en frecuencia y amplitud.
+NHR y HNR: Reflejan la calidad tonal.
+RPDE y D2: Ayudan a comprender la complejidad y variabilidad en la señal de voz.
+Conclusión: Todas las métricas aportan algo de valor, pero las relacionadas con la variabilidad (Jitter, Shimmer), el ruido (NHR, HNR), y la complejidad no lineal (RPDE, D2) son especialmente importantes para detectar los cambios en la voz asociados al Parkinson. La selección de métricas específicas puede, además, optimizar modelos de diagnóstico y monitoreo, ya que algunas métricas pueden ser redundantes o menos significativas por sí solas.
