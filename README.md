@@ -87,7 +87,7 @@ Este modelo fue capaz de manejar exitosamente el desbalanceo, produciendo una ma
 AtromicLink(LinkedGTF)
 Jose Torreglosa.
 
-![GIF de Despedida](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHlvMmg5ajAwMnZxdGVtZGIzNGltbDIwb2xudnU0aDNoN3BxeTI5eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/JGMaGy5beukJ96I5Xw/giphy.gif)
+<img src="./images/Despedida.gif" alt="GIF de Bienvenida" width="600">
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jtorreglosam/)
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:josddaniel1@gmail.com)
