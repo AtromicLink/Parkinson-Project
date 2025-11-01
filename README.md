@@ -6,7 +6,7 @@ Este repositorio contiene el proyecto final para la asignatura de Inteligencia A
 
 **Autores:**
 * Jose Torreglosa cod. 2019219044
-* Jennifer Roa
+* Jennifer Roa cod. 2022214006
 * Lauren Gonzales
 
 ---
